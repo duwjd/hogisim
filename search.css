@@ -1,0 +1,10 @@
+body{
+    padding-left : 10%;
+    padding-right : 10%;
+
+}
+
+.container{
+    width:100%;
+    background-color:aquamarine;
+}
