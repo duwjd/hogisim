@@ -1,1 +1,0 @@
-export { DicDaumNetByHtml } from "./DicDaumNetByHtml";
