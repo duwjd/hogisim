@@ -11,8 +11,8 @@ function App() {
       </header>
       <div className='search'>
         <form>
-          <input className='searchInput'></input>
-          <button className='searchButton'>검색</button>
+          <input className='searchInput' placeholder='검색어를 입력하세요'></input>
+          <a href = "./result/result.js"><button className='searchButton'>검색</button></a>
         </form>
       </div>
 
