@@ -1,13 +1,13 @@
 const words = require("../schemas/words");
 router.post("/wordss", async (req, res) => {
-	const { goodsId, name, thumbnailUrl, category, price } = req.body;
+	const { wordId, name, category} = req.body;
 
-  const goods = await Goods.find({ goodsId });
-  if (goods.length) {
+  const goods = await Goods.find({ wordId });
+  if (words.length) {
     return res.status(400).json({ success: false, errorMessage: "이미 있는 데이터입니다." });
   }
 
-  const createdGoods = await Goods.create({ goodsId, name, thumbnailUrl, category, price });
+  const createWord = await Goods.create({ wordId, name, category });
 
-  res.json({ goods: createdGoods });
+  res.json({ words: createWord });
 });

@@ -1,5 +1,9 @@
 
 import './App.css';
+import './result/result'
+
+const connect = require("./schemas");
+connect();
 
 function App() {
   return (
