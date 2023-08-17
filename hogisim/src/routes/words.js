@@ -7,7 +7,7 @@ router.post("/wordss", async (req, res) => {
     return res.status(400).json({ success: false, errorMessage: "이미 있는 데이터입니다." });
   }
 
-  const createWord = await Goods.create({ wordId, name, category });
+  const createWord = await words.create({ wordId, name, category });
 
   res.json({ words: createWord });
 });
